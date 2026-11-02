@@ -3,7 +3,7 @@ requires = ["setuptools>=61"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "rylalchard-multiling_jd380"
+name = "rylalchard-memory_fragmentation_dedup"
 version = "0.1.0"
 description = "对内容做归一化与分片比对，找出多语言模型工程师·显存碎片与分配策略上的重复项并按相似度归并"
 readme = "README.md"
@@ -22,11 +22,11 @@ classifiers = [
 
 [project.urls]
 Homepage = "https://rylalchard.github.io"
-Repository = "https://github.com/rylalchard/multiling_jd380"
-Issues = "https://github.com/rylalchard/multiling_jd380/issues"
+Repository = "https://github.com/rylalchard/memory_fragmentation_dedup"
+Issues = "https://github.com/rylalchard/memory_fragmentation_dedup/issues"
 
 [project.scripts]
-multiling_jd380 = "multiling_jd380:main"
+memory_fragmentation_dedup = "memory_fragmentation_dedup:main"
 
 [tool.setuptools]
-py-modules = ["multiling_jd380"]
+py-modules = ["memory_fragmentation_dedup"]

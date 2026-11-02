@@ -1,11 +1,11 @@
-# multiling_jd380
+# memory_fragmentation_dedup
 
 **在多语言模型工程师·显存碎片与分配策略里找出重复内容并给出归并建议。**
 
-`multiling_jd380` —— 对内容做归一化与分片比对，找出多语言模型工程师·显存碎片与分配策略上的重复项并按相似度归并
+`memory_fragmentation_dedup` —— 对内容做归一化与分片比对，找出多语言模型工程师·显存碎片与分配策略上的重复项并按相似度归并
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`multiling_jd380.py` 拷走就能用
+- 单文件，`memory_fragmentation_dedup.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install rylalchard-multiling_jd380
+pip install rylalchard-memory_fragmentation_dedup
 ```
 
 装完直接用命令名调用：
 
 ```bash
-multiling_jd380 --help
+memory_fragmentation_dedup --help
 ```
 
-也可以不用安装，直接把 `multiling_jd380.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `memory_fragmentation_dedup.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ multiling_jd380 --help
 ## 用法
 
 ```bash
-python multiling_jd380.py --file input.txt
-python multiling_jd380.py --text "示例内容"
-python multiling_jd380.py --file input.txt --json
+python memory_fragmentation_dedup.py --file input.txt
+python memory_fragmentation_dedup.py --text "示例内容"
+python memory_fragmentation_dedup.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python multiling_jd380.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_multiling_jd380.py
+python test_memory_fragmentation_dedup.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_multiling_jd380.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/rylalchard/multiling_jd380>
+- GitHub 仓库：<https://github.com/rylalchard/memory_fragmentation_dedup>
 
 ---
 
@@ -79,7 +79,7 @@ python test_multiling_jd380.py
 rylalchard 做多语言模型工程师·显存碎片与分配策略相关的问题，方向对标腾讯的负责人多语言模型工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://rylalchard.github.io>
-- 仓库：<https://github.com/rylalchard/multiling_jd380>
+- 仓库：<https://github.com/rylalchard/memory_fragmentation_dedup>
 
 ## 许可
 
